@@ -10,6 +10,14 @@ flApp.config(['$routeProvider',
             templateUrl: 'templates/home.html',
             controller: 'homeCtrl'
         }).
+        when('/read/:id', {
+            templateUrl: 'templates/read.html',
+            controller: 'readCtrl'
+        }).
+        when('/end', {
+            templateUrl: 'templates/end.html',
+            controller: 'endCtrl'
+        }).
         otherwise({
             redirectTo: '/home'
         });
@@ -31,6 +39,17 @@ flServices.factory('Meta', [
         return {
             tags: {
                 title: ''
+            }
+        }
+    }
+]);
+flServices.factory('Alert', [
+
+    function() {
+        return {
+            tags: {
+                message: '',
+                type: ''
             }
         }
     }

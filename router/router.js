@@ -1,5 +1,5 @@
 /*
-chiguire-express
+fluffy-lawyer
 Copyright (c) 2014 Luis Enrique Arriojas
 http://opensource.org/licenses/MIT
 
@@ -16,19 +16,28 @@ https://www.linkedin.com/in/luisarriojas
 */
 
 module.exports = function(app, db) {
-
-
-
-
-
-    //routes to check if session is working
-    app.get('/create-session-var', function(req, res) {
-        req.session.name = "Luis";
-        req.session.surname = "Arriojas";
-        res.send(req.session.name + " " + req.session.surname);
+    app.get('/read', function(req, res) {
+        var read = require("./../scripts/read")(req, res, db);
     });
-
-    app.get('/read-session-var', function(req, res) {
-        res.send(req.session.name + " " + req.session.surname);
+    app.post('/scoreSave', function(req, res) {
+        req.session.score = 'passed';
+        req.session.save(function(err) {
+            res.json({
+                result: 'saved'
+            });
+        });
+    });
+    app.get('/scoreGet', function(req, res) {
+        if (req.session.score == 'passed') {
+            res.json({
+                result: 'Test passed'
+            });
+            delete req.session.score;
+            req.session.save();
+        } else {
+            res.json({
+                result: 'Test not passed'
+            });
+        }
     });
 };

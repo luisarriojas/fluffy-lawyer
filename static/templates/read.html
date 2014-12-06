@@ -1,0 +1,42 @@
+<div class="row">
+    <div class="small-6 columns">
+        <h1>{{document.title}}</h1>
+
+        <h3>Basically, it says:</h3>
+
+        <ul class="square">
+            <li ng-repeat="section in document.sections" class="text-justify">{{section.text}}</li>
+        </ul>
+
+        <a href="{{document.source}}" target="_blank" class="button round"><i class="fa fa-book"></i> Read the original {{document.title}} with legal jargon</a>
+    </div>
+
+    <div class="small-6 columns">
+        <div class="panel callout radius">
+            <p class="text-justify">
+                It is very important to us that you understand our Terms of Service. In order to go forward with your registration, please answer the following questions.
+            </p>
+        </div>
+
+        <div class="panel radius" ng-repeat="question in document.questions">
+            <p>
+                {{question.text}}
+            </p>
+            <div ng-repeat="option in question.options">
+                <input type="radio" ng-model="$parent.answer" ng-value="option" ng-change="chooseOption($parent.$index, option.answer);">&nbsp;{{option.text}}
+            </div>
+        </div>
+
+        <a href="#" class="button round" ng-click="checkScore();" ng-hide="scorePassed"><i class="fa fa-check"></i> Check answers</a>
+
+        <div class="panel" ng-show="scorePassed">
+            <p><i class="fa fa-check"></i> You have approved the test with {{score * 100}}% and the minimum was {{document.minimumScore * 100}}%.</p>
+            <a href="#!end" class="button round">Continue to finish registration <i class="fa fa-arrow-right"></i></a>
+        </div>
+
+        <div class="panel" ng-show="scoreFailed">
+            <p><i class="fa fa-close"></i> You did not understand our {{document.title}}. Your have approved the {{score * 100}}% of the questions and the minimum was {{document.minimumScore * 100}}%.</p>
+            <p>Please read carefully our {{document.title}} and try again.</p>
+        </div>
+    </div>
+</div>

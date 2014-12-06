@@ -1,5 +1,5 @@
 /*
-dark-secret
+fluffy-lawyer
 Copyright (c) 2014 Luis Enrique Arriojas
 http://opensource.org/licenses/MIT
 
@@ -32,13 +32,6 @@ mongodb.connect(mongoURL, {}, function(err, db) {
     var express = require('express');
     var app = express();
 
-    //body-parser
-    var bodyParser = require('body-parser');
-    app.use(bodyParser.json()); // to support JSON-encoded bodies
-    app.use(bodyParser.urlencoded({ // to support URL-encoded bodies
-        extended: true
-    }));
-
     //add compression
     var compression = require('compression')();
     app.use(compression);
@@ -58,6 +51,13 @@ mongodb.connect(mongoURL, {}, function(err, db) {
             pass: setup.redis.pass,
             ttl: setup.redis.ttl
         })
+    }));
+
+    //body-parser
+    var bodyParser = require('body-parser');
+    app.use(bodyParser.json()); // to support JSON-encoded bodies
+    app.use(bodyParser.urlencoded({ // to support URL-encoded bodies
+        extended: false
     }));
 
     //static views
