@@ -1,5 +1,5 @@
 /*
-chiguire-express
+fluffly-lawyer
 Copyright (c) 2014 Luis Enrique Arriojas
 http://opensource.org/licenses/MIT
 
@@ -14,30 +14,46 @@ You're reading. I want to work for you.
 https://www.linkedin.com/in/luisarriojas
 
 */
-
-var setup = {
-    mongodb: {
-        user: '',
-        password: '',
-        host: '',
-        port: '',
-        database: ''
-    },
-    redis: {
-        host: '',
-        port: 123,
-        pass: '',
-        ttl: 57600
-    },
-    session: {
-        cookieParserSecret: '',
-        expressSessionSecret: ''
-    },
-    passport: {
-        clientID: '',
-        clientSecret: '',
-        callbackURL: ''
+module.exports = function(environment) {
+    if (environment == 'production') {
+        var setup = {
+            mongodb: {
+                user: '',
+                password: '',
+                host: '',
+                port: 47030,
+                database: ''
+            },
+            redis: {
+                host: '',
+                port: 13492,
+                pass: '',
+                ttl: 57600
+            },
+            session: {
+                cookieParserSecret: 'JRjs*rrF5WN3h$@l1nTnPVffMg*tKz5!r6a7rDffXM%4H%bng6ModqRdEI*9aXkD',
+                expressSessionSecret: 'uXNkT45QgILnzUd5d8f$Kygy1VGukM8FDbw8#X2o1Qe$tTTad%QoLfb0vI4oSgVp'
+            }
+        }
+    } else {
+        var setup = {
+            mongodb: {
+                host: 'localhost',
+                port: 27017,
+                database: 'fluffy-lawyer'
+            },
+            redis: {
+                host: 'localhost',
+                port: 6379,
+                pass: '',
+                ttl: 57600
+            },
+            session: {
+                cookieParserSecret: 'JRjs*rrF5WN3h$@l1nTnPVffMg*tKz5!r6a7rDffXM%4H%bng6ModqRdEI*9aXkD',
+                expressSessionSecret: 'uXNkT45QgILnzUd5d8f$Kygy1VGukM8FDbw8#X2o1Qe$tTTad%QoLfb0vI4oSgVp'
+            }
+        }
     }
-}
 
-module.exports = setup;
+    return setup;
+};

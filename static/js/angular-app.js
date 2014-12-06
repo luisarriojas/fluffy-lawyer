@@ -1,18 +1,14 @@
 'use strict';
 
-var dpApp = angular.module('dpApp', ['ngRoute', 'dpControllers', 'dpServices']);
+var flApp = angular.module('flApp', ['ngRoute', 'flControllers', 'flServices']);
 
 /* router */
-dpApp.config(['$routeProvider',
+flApp.config(['$routeProvider',
     function($routeProvider) {
         $routeProvider.
         when('/home', {
             templateUrl: 'templates/home.html',
             controller: 'homeCtrl'
-        }).
-        when('/about/:message', {
-            templateUrl: 'templates/about.html',
-            controller: 'aboutCtrl'
         }).
         otherwise({
             redirectTo: '/home'
@@ -21,20 +17,19 @@ dpApp.config(['$routeProvider',
 ]);
 
 /* fix to crawlers */
-dpApp.config(['$locationProvider',
+flApp.config(['$locationProvider',
     function($locationProvider) {
         $locationProvider.html5Mode(false).hashPrefix('!');
     }
 ]);
 
 /* services */
-var dpServices = angular.module('dpServices', []);
-dpServices.factory('Meta', [
+var flServices = angular.module('flServices', []);
+flServices.factory('Meta', [
 
     function() {
         return {
             tags: {
-                description: '',
                 title: ''
             }
         }

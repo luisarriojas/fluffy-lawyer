@@ -1,30 +1,27 @@
 'use strict';
 
-var dpControllers = angular.module('dpControllers', []);
+var flControllers = angular.module('flControllers', []);
 
-dpControllers.controller('dpCtrl', ['$scope', 'Meta',
+flControllers.controller('flCtrl', ['$scope', 'Meta',
     function($scope, Meta) {
-        $scope.dpMeta = Meta.tags;
-
-        $scope.indexContent = 'este es el index';
+        $scope.flMeta = Meta.tags;
     }
 ]);
 
-dpControllers.controller('homeCtrl', ['$scope', 'Meta', '$http',
+flControllers.controller('homeCtrl', ['$scope', 'Meta', '$http',
     function($scope, Meta, $http) {
-        $scope.dpMeta = Meta.tags;
-        $scope.dpMeta.description = "Todo en amortiguadores, ballestas y espirales. Envíos a nivel nacional. Valencia, Venezuela.";
-        $scope.dpMeta.title = "Home";
+        $scope.flMeta = Meta.tags;
+        $scope.flMeta.title = "Home";
 
-        
+
     }
 ]);
 
-dpControllers.controller('aboutCtrl', ['$scope', 'Meta', '$routeParams',
+flControllers.controller('aboutCtrl', ['$scope', 'Meta', '$routeParams',
     function($scope, Meta, $routeParams) {
-        $scope.dpMeta = Meta.tags;
-        $scope.dpMeta.description = "Todo en amortiguadores, ballestas y espirales. Envíos a nivel nacional. Valencia, Venezuela.";
-        $scope.dpMeta.title = "About";
+        $scope.flMeta = Meta.tags;
+        $scope.flMeta.description = "Todo en amortiguadores, ballestas y espirales. Envíos a nivel nacional. Valencia, Venezuela.";
+        $scope.flMeta.title = "About";
 
         $scope.aboutContent = $routeParams.message;
     }

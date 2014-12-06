@@ -1,6 +1,6 @@
 {
-    "name": "chiguire-express",
-    "version": "2.0.0",
+    "name": "fluffy-lawyer",
+    "version": "0.1.0",
     "author": {
         "name": "Luis Enrique Arriojas",
         "url": "http://linkedin.com/in/luisarriojas"
@@ -8,7 +8,7 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/luisarriojas/chiguire-express.git"
+        "url": "git@github.com:luisarriojas/fluffy-lawyer.git"
     },
     "private": true,
     "scripts": {
@@ -18,19 +18,13 @@
         "node": "0.10.x"
     },
     "dependencies": {
-        "supervisor": "0.6.x",
-        "express": "4.1.0",
-        "compression": "1.0.1",
-        "cookie-parser": "1.0.1",
-        "express-session": "1.0.3",
-        "connect-redis": "2.0.0",
-        "mongodb": "1.4.2",
-        "passport": "0.2.1",
-        "passport-facebook": "1.0.3"
-    },
-    "keywords": [
-        "node",
-        "heroku",
-        "express"
-    ]
+        "body-parser": "1.9.x",
+        "compression": "1.0.x",
+        "connect-redis": "2.0.x",
+        "cookie-parser": "1.0.x",
+        "express": "4.1.x",
+        "express-session": "1.0.x",
+        "mongodb": "1.4.x",
+        "supervisor": "0.6.x"
+    }
 }
