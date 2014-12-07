@@ -1,7 +1,7 @@
 fluffy-lawyer
 =============
 
-*A legal wizard that makes users read TOS and similar documents.*
+*A legal wizard to help users to understand TOS and similar documents.*
 
 **Dependencies**
 * AngularJS
@@ -13,17 +13,17 @@ fluffy-lawyer
 * Copy the "app" folder.
 
 * Just create a .json file for each document with the following schema and save it in "documents" folder:
-```json
-{
-    "source": "",
-    "title": "",
-    "minimumScore": 0,
-    "video": "",
-    "urlOk": "",
-    "sections": [],
-    "questions": []
-}
-```
+    ```json
+    {
+        "source": "",
+        "title": "",
+        "minimumScore": 0,
+        "video": "",
+        "urlOk": "",
+        "sections": [],
+        "questions": []
+    }
+    ```
 
 * Point to "app/index.html" from a link during your registration proccess.
   
