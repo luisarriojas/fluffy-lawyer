@@ -64,7 +64,7 @@ fluffy-lawyer
     }
     ```
     
-**Example for a document using text**
+**Example for a document using text to understand the document**
 
 ```json
 {
@@ -146,7 +146,7 @@ fluffy-lawyer
 }
 ```
 
-**Example for a document using video**
+**Example for a document using video to understand the document**
 
 ```json
 {
