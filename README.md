@@ -25,7 +25,7 @@ fluffy-lawyer
     }
     ```
 
-* Point to "app/index.html" from a link during your registration proccess.
+* Point to "app/index.html" from a link during the registration proccess.
   
 **Schema explained**
 * source: URL of the legal document with legal jargon. It could be a webpage or a file like a PDF.
@@ -34,27 +34,27 @@ fluffy-lawyer
 * video: It is the ID on the YouTube's URL. In the following URL: https://www.youtube.com/watch?v=ayFAQ2OoJaA the ID is ayFAQ2OoJaA
 * urlOk: The URL where the user is redirected when it passed the test.
 * sections: An array of JSON documents structured with the following schema representing resumed sections of the legal document:
-```json
-{
-    "text": "By using 500px you agree to all the terms below."
-}
-```
+    ```json
+    {
+        "text": "By using 500px you agree to all the terms below."
+    }
+    ```
 * questions: An array of JSON documents structured with the following schema:
-```json
-{
-    "text": "",
-    "options": [{
-        "text": "An ecommerce site",
-        "answer": false
-    }, {
-        "text": "A search engine",
-        "answer": false
-    }, {
-        "text": "A photo community",
-        "answer": true
-    }]
-}
-```
+    ```json
+    {
+        "text": "What is 500px?",
+        "options": [{
+            "text": "An ecommerce site",
+            "answer": false
+        }, {
+            "text": "A search engine",
+            "answer": false
+        }, {
+            "text": "A photo community",
+            "answer": true
+        }]
+    }
+    ```
 **.json file examples**
 * Example for a document using text:
 ```json
