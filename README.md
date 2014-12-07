@@ -64,8 +64,8 @@ fluffy-lawyer
     }
     ```
     
-**.json file examples**
-* Example for a document using text:
+**Example for a document using text**
+
 ```json
 {
     "source": "https://500px.com/terms",
@@ -146,7 +146,8 @@ fluffy-lawyer
 }
 ```
 
-* Example for a document using video:
+**Example for a document using video**
+
 ```json
 {
     "source": "https://www.youtube.com/t/terms",
