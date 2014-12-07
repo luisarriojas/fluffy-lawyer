@@ -34,12 +34,14 @@ fluffy-lawyer
 * video: It is the ID on the YouTube's URL. In the following URL: https://www.youtube.com/watch?v=ayFAQ2OoJaA the ID is ayFAQ2OoJaA
 * urlOk: The URL where the user is redirected when it passed the test.
 * sections: An array of JSON documents structured with the following schema representing resumed sections of the legal document:
+
     ```json
     {
         "text": "By using 500px you agree to all the terms below."
     }
     ```
 * questions: An array of JSON documents structured with the following schema:
+
     ```json
     {
         "text": "What is 500px?",
@@ -55,6 +57,7 @@ fluffy-lawyer
         }]
     }
     ```
+    
 **.json file examples**
 * Example for a document using text:
 ```json
