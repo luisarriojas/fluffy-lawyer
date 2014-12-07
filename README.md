@@ -1,7 +1,7 @@
 fluffy-lawyer
 =============
 
-* A legal wizard that makes users read TOS and similar documents.
+*A legal wizard that makes users read TOS and similar documents.*
 
 **Dependencies**
 * AngularJS
