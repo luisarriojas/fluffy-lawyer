@@ -1,0 +1,62 @@
+{
+    "source": "https://about.pinterest.com/en/privacy-policy",
+    "title": "Privacy Policy",
+    "minimumScore": 50,
+    "video": "",
+    "urlOk": "../index.html",
+    "sections": [{
+        "text": "When you sign up for or use our products, you voluntarily give us certain information. This can include your name, profile photo, Pins, comments, likes, email address you used to sign up, and any other information you provide us."
+    }, {
+        "text": "When you use Pinterest, our servers automatically record information (“log data”), including information that your browser sends whenever you visit a website or your mobile app sends when you’re using it."
+    }, {
+        "text": "Depending on how you’re accessing our products, we may use \"cookies\"."
+    }, {
+        "text": "Sometimes our partners may let us collect information when you use their services, or may share with us the information they collect."
+    }, {
+        "text": "We may share your personal information when we may employ third party companies or individuals to process personal information on our behalf based on our instructions."
+    }, {
+        "text": "Pinterest is not directed to children under 13."
+    }, {
+        "text": "We may change this policy from time to time, and if we do we’ll post any changes on this page. If you continue to use Pinterest after those changes are in effect, you agree to the revised policy."
+    }],
+    "questions": [{
+        "text": "Question #1 (Correct answer is #4)?",
+        "options": [{
+            "text": "Option #1",
+            "answer": false
+        }, {
+            "text": "Option #2",
+            "answer": false
+        }, {
+            "text": "Option #3",
+            "answer": false
+        }, {
+            "text": "Option #4",
+            "answer": true
+        }]
+    }, {
+        "text": "Question #2 (Correct answer is #2)?",
+        "options": [{
+            "text": "Option #1",
+            "answer": false
+        }, {
+            "text": "Option #2",
+            "answer": true
+        }, {
+            "text": "Option #3",
+            "answer": false
+        }]
+    }, {
+        "text": "Question #3 (Correct answer is #1)?",
+        "options": [{
+            "text": "Option #1",
+            "answer": true
+        }, {
+            "text": "Option #2",
+            "answer": false
+        }, {
+            "text": "Option #3",
+            "answer": false
+        }]
+    }]
+}

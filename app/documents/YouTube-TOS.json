@@ -1,0 +1,65 @@
+{
+    "source": "https://www.youtube.com/t/terms",
+    "title": "Terms of Service",
+    "minimumScore": 100,
+    "video": "jURtTZ8qqTc",
+    "urlOk": "../index.html",
+    "sections": [{
+        "text": "Source: Video taken from https://www.youtube.com/watch?v=jURtTZ8qqTc"
+    }],
+    "questions": [{
+        "text": "On YouTube, may you be exposed to content that is inaccurate, offensive, indecent, or objectionable?",
+        "options": [{
+            "text": "Yes",
+            "answer": true
+        }, {
+            "text": "No",
+            "answer": false
+        }]
+    }, {
+        "text": "Can the user upload videos containing paid advertisement?",
+        "options": [{
+            "text": "Yes",
+            "answer": false
+        }, {
+            "text": "No",
+            "answer": true
+        }]
+    }, {
+        "text": "Which of the following videos are not allow on YouTube?",
+        "options": [{
+            "text": "A video of an aircraft passing above an stadium during the National Anthem.",
+            "answer": false
+        }, {
+            "text": "A video unboxing a new iPhone",
+            "answer": false
+        }, {
+            "text": "A video where a Shakira's song is used as soundtrack",
+            "answer": true
+        }, {
+            "text": "A trailer of Guardians of the Galaxy",
+            "answer": false
+        }]
+    }, {
+        "text": "Who retains the video's ownership rights?",
+        "options": [{
+            "text": "Facebook",
+            "answer": false
+        }, {
+            "text": "Google",
+            "answer": false
+        }, {
+            "text": "Me, the user",
+            "answer": true
+        }]
+    }, {
+        "text": "Does Google can use your video for free to use, reproduce, distribute, prepare derivative works of, display, publish and adapt?",
+        "options": [{
+            "text": "No",
+            "answer": false
+        }, {
+            "text": "Yes",
+            "answer": true
+        }]
+    }]
+}

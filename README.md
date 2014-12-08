@@ -64,7 +64,7 @@ fluffy-lawyer
     }
     ```
     
-**Example for a document using text to understand the document**
+**Example of schema using text to understand a legal document**
 
 ```json
 {
@@ -146,7 +146,7 @@ fluffy-lawyer
 }
 ```
 
-**Example for a document using video to understand the document**
+**Example of schema using video to understand a legal document**
 
 ```json
 {

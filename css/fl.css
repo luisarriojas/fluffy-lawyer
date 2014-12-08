@@ -1,0 +1,15 @@
+.wallpaper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../img/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: darkgrey;
+    z-index: -1;
+}
+.alert-box i {
+    color: white;
+}

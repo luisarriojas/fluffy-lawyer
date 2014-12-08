@@ -1,0 +1,77 @@
+{
+    "source": "https://500px.com/terms",
+    "title": "Terms of Service",
+    "minimumScore": 75,
+    "video": "",
+    "urlOk": "../index.html",
+    "sections": [{
+        "text": "By using 500px you agree to all the terms below."
+    }, {
+        "text": "We develop a photo community and provide services to create online portfolios and we will develop more features and services in the future. At times things can go wrong and the service may be interrupted. Unlikely, but sometimes things can go really wrong."
+    }, {
+        "text": "To fully use the services you need to create your own account, without violating other peoples' rights."
+    }, {
+        "text": "You cannot use our site to post pornographic material, harass people, send spam, negatively vote on all photos, and do other crazy stuff. Be reasonable and responsible, don't do anything stupid and you'll be fine."
+    }, {
+        "text": "Your photos will preserve whatever copyright they had before uploading to this site. We will protect the copyright and will not sell your photos without your permission."
+    }, {
+        "text": "We offer free 14 day no-obligation trial to try all the features of Awesome and Plus accounts. Refunds apply only to services described on upgrade page."
+    }, {
+        "text": "If you use more than your fair share, we may gradually limit your account."
+    }, {
+        "text": "If you are using the Market to sell prints and downloads of your photos for profit, you give us permission to print photos and deliver downloads. Your photos will be kept safe."
+    }, {
+        "text": "We respect copyright. If anything is wrong, please send an email with all the details to help@500px.com."
+    }, {
+        "text": "Some people may post links, we are not responsible for those links."
+    }, {
+        "text": "We are not liable if something goes really wrong. Always have a backup of your photos."
+    }, {
+        "text": "Again, we are not liable. But we may pay you $100 if our server flies into your window."
+    }, {
+        "text": "Please respect our trademarks and brands."
+    }, {
+        "text": "We may stop providing services at any time. You can stop using your account or close it at any time as well."
+    }, {
+        "text": "If these terms of use change, we will notify you."
+    }, {
+        "text": "Things can happen — we are not responsible."
+    }],
+    "questions": [{
+        "text": "By accessing the site, viewing any content or using any services available on the site, are you agreeing to be bound by these terms?",
+        "options": [{
+            "text": "Yes",
+            "answer": true
+        }, {
+            "text": "No",
+            "answer": false
+        }]
+    }, {
+        "text": "What is 500px?",
+        "options": [{
+            "text": "An ecommerce site",
+            "answer": false
+        }, {
+            "text": "A search engine",
+            "answer": false
+        }, {
+            "text": "A photo community",
+            "answer": true
+        }]
+    }, {
+        "text": "Who is responsible for maintaining the confidentiality of your password?",
+        "options": [{
+            "text": "500px",
+            "answer": false
+        }, {
+            "text": "Google",
+            "answer": false
+        }, {
+            "text": "Me, the user",
+            "answer": true
+        }, {
+            "text": "Aliens",
+            "answer": false
+        }]
+    }]
+}
